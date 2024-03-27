@@ -29,7 +29,7 @@ dag = DAG(
 # define the task named 'extract_transform_load'
 extract_transform_load = BashOperator(
     task_id='extract_transform_load',
-    bash_command="./home/project/airflow/dags/extract_transform_load.sh",
+    bash_command="/home/project/airflow/dags/extract_transform_load.sh",
     dag=dag
 )
 
